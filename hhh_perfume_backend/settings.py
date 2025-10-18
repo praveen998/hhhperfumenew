@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     'whitenoise.middleware.WhiteNoiseMiddleware', 
 ]
 
 ROOT_URLCONF = 'hhh_perfume_backend.urls'
@@ -71,10 +72,21 @@ TEMPLATES = [
 WSGI_APPLICATION = 'hhh_perfume_backend.wsgi.application'
 
 # Database (SQLite default)
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'hhhperfumes',
+        'USER': 'praveen',
+        'PASSWORD': 'praveen',
+        'HOST': '10.55.175.81',
+        'PORT': '3306',
     }
 }
 

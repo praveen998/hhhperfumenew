@@ -1,0 +1,10 @@
+user = CustomUser.objects.create_user(
+    email='info@hhhperfumes.in',
+    username='info@hhhperfumes.in',
+    password='InfoHHH@123',
+    first_name='hhh',
+    last_name='perfumes',
+    phone_number='',
+    is_staff=False, 
+    is_superuser=True,
+)

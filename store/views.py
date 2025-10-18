@@ -53,10 +53,19 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-
-
+from .models import CustomUser 
 
 User=get_user_model()
+# user = CustomUser.objects.create_user(
+#     email='info@hhhperfumes.in',
+#     username='info@hhhperfumes.in',
+#     password='InfoHHH@123',
+#     first_name='hhh',
+#     last_name='perfumes',
+#     phone_number='',
+#     is_staff=False, 
+#     is_superuser=True,
+# )
 # -------------------------------------------
 # CATEGORY / PRODUCT / CONTACT API
 # -------------------------------------------
