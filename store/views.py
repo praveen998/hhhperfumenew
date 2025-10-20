@@ -69,6 +69,7 @@ User=get_user_model()
 # -------------------------------------------
 # CATEGORY / PRODUCT / CONTACT API
 # -------------------------------------------
+
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
